@@ -1,12 +1,6 @@
 import React from "react";
 
 const PersonalDetails = ({ formData, setFormData }) => {
-  // name: "",
-  // email: "",
-  // phone: "",
-  // linkedin: "",
-  // github: "",
-  // skills: "",
   return (
     <div className="container">
       <form className="row g-3">
@@ -15,6 +9,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
             Name
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -29,6 +24,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
             Email
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -43,6 +39,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
             Phone
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -58,10 +55,11 @@ const PersonalDetails = ({ formData, setFormData }) => {
             Github
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"
-            placeholder="https://github/YOURUSERNAME"
+            placeholder="https://github/yourusername"
             value={formData.github}
             onChange={(e) => {
               setFormData({ ...formData, github: e.target.value });
@@ -73,10 +71,11 @@ const PersonalDetails = ({ formData, setFormData }) => {
             LinkedIn
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="LinkedIn"
-            placeholder="https://linkedIn/YOURUSERNAME"
+            placeholder="https://linkedIn/yourusername"
             value={formData.linkedin}
             onChange={(e) => {
               setFormData({ ...formData, linkedin: e.target.value });
@@ -88,6 +87,7 @@ const PersonalDetails = ({ formData, setFormData }) => {
             Skills
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="Skills"

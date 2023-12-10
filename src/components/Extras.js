@@ -1,8 +1,7 @@
 import React from "react";
 
 const Extras = ({ formData, setFormData }) => {
-  // extra_1: "",
-  //   extra_2: "",
+  
   return (
     <div className="container d-flex justify-content-center">
       <form className="row g-3">
@@ -12,6 +11,7 @@ const Extras = ({ formData, setFormData }) => {
             Languages
           </label>
           <input
+          required
             type="text"
             className="form-control"
             id="name"
@@ -19,6 +19,7 @@ const Extras = ({ formData, setFormData }) => {
             onChange={(e) => {
               setFormData({ ...formData, extra_1: e.target.value });
             }}
+            
           />
         </div>
 
@@ -29,6 +30,7 @@ const Extras = ({ formData, setFormData }) => {
             Hobbies
           </label>
           <input
+          required
             type="text"
             className="form-control"
             id="name"

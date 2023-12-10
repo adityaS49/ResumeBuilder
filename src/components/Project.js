@@ -15,6 +15,7 @@ const Project = ({ formData, setFormData }) => {
             Name of project
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -30,6 +31,7 @@ const Project = ({ formData, setFormData }) => {
             Link to project
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -44,6 +46,7 @@ const Project = ({ formData, setFormData }) => {
             Description about project
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"
@@ -59,6 +62,7 @@ const Project = ({ formData, setFormData }) => {
             Enter your Second Project Name
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -73,6 +77,7 @@ const Project = ({ formData, setFormData }) => {
             Link of second project
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -88,6 +93,7 @@ const Project = ({ formData, setFormData }) => {
             Description
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"

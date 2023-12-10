@@ -1,14 +1,7 @@
 import React from "react";
 
 const Experiences = ({ formData, setFormData }) => {
-  // exp1_org: "",
-  //   exp1_pos: "",
-  //   exp1_desc: "",
-  //   exp1_dur: "",
-  //   exp2_org: "",
-  //   exp2_pos: "",
-  //   exp2_des: "",
-  //   exp2_dur: "",
+
   return (
     <div className="container">
       <form className="row g-3">
@@ -17,6 +10,7 @@ const Experiences = ({ formData, setFormData }) => {
             Enter your first company name you worked for
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -32,6 +26,7 @@ const Experiences = ({ formData, setFormData }) => {
             What was your designation?
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -46,6 +41,7 @@ const Experiences = ({ formData, setFormData }) => {
             How many years you worked there for?
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -60,6 +56,7 @@ const Experiences = ({ formData, setFormData }) => {
             Tell us about your job description
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"
@@ -75,6 +72,7 @@ const Experiences = ({ formData, setFormData }) => {
             Enter your Second company name
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -89,6 +87,7 @@ const Experiences = ({ formData, setFormData }) => {
             What was your designation?
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -103,6 +102,7 @@ const Experiences = ({ formData, setFormData }) => {
             How many years you worked there?
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -118,6 +118,7 @@ const Experiences = ({ formData, setFormData }) => {
             Tell us about your job description
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"

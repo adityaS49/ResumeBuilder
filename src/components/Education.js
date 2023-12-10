@@ -1,14 +1,7 @@
 import React from "react";
 
 const Education = ({ formData, setFormData }) => {
-  // edu1_school: "",
-  //   edu1_year: "",
-  //   edu1_qualification: "",
-  //   edu1_desc: "",
-  //   edu2_school: "",
-  //   edu2_year: "",
-  //   edu2_qualification: "",
-  //   edu2_desc: "",
+
   return (
     <div className="container">
       <form className="row g-3">
@@ -17,6 +10,7 @@ const Education = ({ formData, setFormData }) => {
             Enter your First Institute name
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -31,6 +25,7 @@ const Education = ({ formData, setFormData }) => {
             Year you graduated
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -45,6 +40,7 @@ const Education = ({ formData, setFormData }) => {
             Degree you pursued
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -60,6 +56,7 @@ const Education = ({ formData, setFormData }) => {
             Enter a short description
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"
@@ -75,6 +72,7 @@ const Education = ({ formData, setFormData }) => {
             Enter your Second Institute name
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="name"
@@ -89,6 +87,7 @@ const Education = ({ formData, setFormData }) => {
             Year you graduated from your second institute
           </label>
           <input
+            required
             type="email"
             className="form-control"
             id="Email"
@@ -103,6 +102,7 @@ const Education = ({ formData, setFormData }) => {
             Degree you pursued
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="phone"
@@ -118,6 +118,7 @@ const Education = ({ formData, setFormData }) => {
             Enter a short description
           </label>
           <input
+            required
             type="text"
             className="form-control"
             id="github"

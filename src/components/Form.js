@@ -76,6 +76,7 @@ const Form = () => {
       </div>
       <div className="progressbar">
         <div
+          className="rounded-pill"
           style={{
             width:
               page === 0
@@ -103,7 +104,9 @@ const Form = () => {
         </button>
         <button
           className="btn btn-primary"
+          type="submit"
           onClick={() => {
+            console.log(formData);
             if (page === FormTitle.length - 1) {
               axios
                 .post("http://localhost:4000/create-pdf", formData)
@@ -112,12 +115,49 @@ const Form = () => {
                     responseType: "blob",
                   })
                 )
+               
                 .then((res) => {
                   const pdfBlob = new Blob([res.data], {
                     type: "application/pdf",
                   });
                   setSuccess(true && res.status === 200);
                   saveAs(pdfBlob, "Resume.pdf");
+                  setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    linkedin: "",
+                    github: "",
+                    skills: "",
+
+                    exp1_org: "",
+                    exp1_pos: "",
+                    exp1_desc: "",
+                    exp1_dur: "",
+                    exp2_org: "",
+                    exp2_pos: "",
+                    exp2_des: "",
+                    exp2_dur: "",
+
+                    proj1_title: "",
+                    proj1_link: "",
+                    proj1_desc: "",
+                    proj2_title: "",
+                    proj2_link: "",
+                    proj2_desc: "",
+
+                    edu1_school: "",
+                    edu1_year: "",
+                    edu1_qualification: "",
+                    edu1_desc: "",
+                    edu2_school: "",
+                    edu2_year: "",
+                    edu2_qualification: "",
+                    edu2_desc: "",
+
+                    extra_1: "",
+                    extra_2: "",
+                  });
                 });
             } else {
               setPage((currPage) => currPage + 1);
